@@ -1,0 +1,134 @@
+.landing-page {
+  display: flex;
+  padding: 148px;
+  align-items: center;
+  height: 98vh;
+}
+.landing-page .contain {
+  width: 50%;
+}
+.landing-page .image-block {
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.home h1 {
+  font-family: "Heebo";
+  font-size: 44px;
+  font-style: bold;
+  font-weight: 700;
+}
+
+.home p {
+  font-family: "heebo";
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.home .btn {
+  margin-top: 1rem;
+  background: #ff6464;
+  font-family: "Heebo";
+  font-weight: 500;
+  font-size: 1.25rem;
+  color: white;
+  padding: 0.2rem 1rem;
+  border: none;
+  border-radius: 2px;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+}
+
+.home .btn:hover {
+  transform: translateY(-3px);
+}
+
+.posts {
+  width: 98.9vw;
+  padding: 0 148px;
+  background: #edf7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 420px;
+}
+.posts .contain {
+  position: absolute;
+  top: 0.5rem;
+  width: 78%;
+  display: flex;
+  justify-content: space-between;
+}
+.posts .contain p + p {
+  color: #00a8cc;
+}
+.posts .card-block {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+.posts .card-block .card {
+  width: 418px;
+  height: 295px;
+  border: 2rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+.posts .card-block .card:hover {
+  transform: scale(1.1);
+}
+.posts .card-block .card h3 {
+  font-size: 1.65rem;
+  font-family: "heebo";
+  font-weight: 700;
+}
+.posts .card-block .card .date {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  position: relative;
+}
+.posts .card-block .card .date .line {
+  border-left: 1px solid black;
+  height: 1rem;
+  position: absolute;
+  top: 1.1rem;
+  left: 6.5rem;
+}
+.posts .card-block .card .date div + p {
+  margin-left: 2rem;
+}
+
+.features {
+  padding: 0 148px;
+}
+.features > p {
+  font-size: 22px;
+  font-family: "heebo";
+}
+.featured-card {
+  padding: 2rem;
+  display: flex;
+  border-bottom: 1px solid #e0e0e0;
+}
+.featured-card h1 {
+  color: #21243d;
+  font-size: 1.9rem;
+  font-style: bold;
+  font-family: "heebo";
+}
+.featured-card .featured_card-contain {
+  margin-left: 1rem;
+}
+.featured-card .featured_card-contain .date {
+  display: flex;
+}
+.featured-card .featured_card-contain .date p + p {
+  margin-left: 1rem;
+  color: #8695a4;
+}
