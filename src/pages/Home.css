@@ -25,10 +25,12 @@
   font-family: "heebo";
   font-size: 1rem;
   margin-top: 1rem;
+  line-height: 2rem;
+  word-spacing: 0.2ch;
 }
 
 .home .btn {
-  margin-top: 1rem;
+  margin-top: 2rem;
   background: #ff6464;
   font-family: "Heebo";
   font-weight: 500;
@@ -50,6 +52,7 @@
   padding: 0 148px;
   background: #edf7fa;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -60,6 +63,7 @@
   top: 0.5rem;
   width: 78%;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .posts .contain p + p {
@@ -67,13 +71,13 @@
 }
 .posts .card-block {
   width: 100%;
-
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .posts .card-block .card {
   width: 418px;
-  height: 295px;
+
   border: 2rem;
   background-color: #ffffff;
   padding: 1rem;
@@ -131,4 +135,73 @@
 .featured-card .featured_card-contain .date p + p {
   margin-left: 1rem;
   color: #8695a4;
+}
+@media screen and (max-width: 1200px) {
+  .posts {
+    width: 100vw;
+    padding: 5rem;
+    height: min-content;
+  }
+  .features {
+    padding: 5rem;
+  }
+  .landing-page {
+    padding: 5rem;
+  }
+}
+@media screen and (max-width: 1010px) {
+  .posts .contain {
+    justify-content: center;
+  }
+  .posts .contain p + p {
+    display: none;
+  }
+
+  .posts .card-block .card {
+    margin: 1rem;
+  }
+
+  .featured-card {
+    align-items: center;
+  }
+}
+@media screen and (max-width: 700px) {
+  .landing-page {
+    flex-direction: column-reverse;
+    padding: 2rem;
+    margin-top: 5rem;
+    height: fit-content;
+  }
+  .landing-page .image-block {
+    justify-content: center;
+  }
+  .landing-page .contain {
+    padding: 0;
+    width: 100%;
+  }
+  .landing-page .contain {
+    text-align: center;
+
+    margin: 1rem;
+  }
+  .landing-page .contain h1 {
+    font-size: 32px;
+  }
+
+  .posts {
+    padding: 3rem 1rem;
+  }
+  .features {
+    padding: 1rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .featured-card {
+    flex-direction: column;
+    width: 90%;
+    padding: 0.3rem;
+  }
 }

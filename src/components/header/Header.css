@@ -16,3 +16,35 @@ header nav ul li {
   font-size: 1.25rem;
   margin: 1rem;
 }
+
+header .icon {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  header {
+    padding: 1rem;
+  }
+  header .icon {
+    display: flex;
+
+    justify-content: flex-end;
+    font-size: 3rem;
+  }
+  .close {
+    display: none;
+  }
+  .open {
+    display: contents;
+  }
+  header nav {
+    transition: all 0.5s ease-in-out;
+  }
+  header nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 84vh;
+    overflow-y: hidden;
+    transition: all 0.5s ease-in-out;
+  }
+}
